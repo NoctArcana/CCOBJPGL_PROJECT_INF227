@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="1244.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckoutController">
+   <children>
+      <ImageView fitHeight="924.0" fitWidth="1541.0" layoutY="-101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/GGbg1.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="totalpane" layoutX="821.0" layoutY="25.0" prefHeight="402.0" prefWidth="402.0" style="-fx-background-color: #6c5daf;">
+         <children>
+            <Label layoutX="32.0" layoutY="32.0" text="TOTAL" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font></Label>
+            <Label fx:id="total" layoutX="32.0" layoutY="75.0" text="00.00" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="32.0" layoutY="117.0" text="Order Instructions" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="27.0" layoutY="137.0" prefHeight="168.0" prefWidth="348.0" />
+            <Button fx:id="checkoutbtn" layoutX="166.0" layoutY="333.0" mnemonicParsing="false" onAction="#checkout" style="-fx-background-color: blue;" text="Checkout" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="24.0" layoutY="25.0" prefHeight="30.0" prefWidth="792.0" style="-fx-background-color: #6c5daf;">
+         <children>
+            <Label layoutX="30.0" layoutY="5.0" text="Game" textFill="WHITE" />
+            <Label layoutX="500.0" layoutY="7.0" text="Quantity" textFill="WHITE" />
+            <Label layoutX="670.0" layoutY="5.0" text="Total" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ScrollPane layoutX="24.0" layoutY="63.0" prefHeight="712.0" prefWidth="792.0" style="-fx-background-color: transparent;">
+         <content>
+            <VBox fx:id="myvbox" prefHeight="2532.0" prefWidth="775.0" style="-fx-background-color: #272662;">
+               <children>
+                  <Pane fx:id="NSpane1" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="NSimg1" fitHeight="140.0" fitWidth="120.0" layoutX="30.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/TOTK.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="NSname1" layoutX="130.0" layoutY="30.0" text="The Legend Of Zelda Tears Of The Kingdom" textFill="WHITE" />
+                        <Label fx:id="NSprice1" layoutX="130.0" layoutY="60.0" text="2499.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="NSchoicebox1" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="NStotal1" layoutX="660.0" layoutY="60.0" text="2499.00" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="NSpane2" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="NSimg2" fitHeight="140.0" fitWidth="120.0" layoutX="30.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/SSBU.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="NSname2" layoutX="130.0" layoutY="30.0" text="Super Smash Bros. Ultimate" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="NSprice2" layoutX="130.0" layoutY="60.0" text="2495.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="NSchoicebox2" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="NStotal2" layoutX="660.0" layoutY="60.0" text="2495.00" textFill="WHITE" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="NSpane3" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="NSimg3" fitHeight="140.0" fitWidth="120.0" layoutX="30.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/XC3.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="NSname3" layoutX="130.0" layoutY="30.0" text="Xenoblade Chronicles 3" textFill="WHITE" />
+                        <Label fx:id="NSprice3" layoutX="130.0" layoutY="60.0" text="2595.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="NSchoicebox3" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="NStotal3" layoutX="660.0" layoutY="60.0" text="2595.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="NSpane4" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="NSimg4" fitHeight="140.0" fitWidth="120.0" layoutX="30.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/PKMNLA.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="NSname4" layoutX="130.0" layoutY="30.0" text="Pokemon Legends Arceus" textFill="WHITE" />
+                        <Label fx:id="NSprice4" layoutX="130.0" layoutY="60.0" text="2495.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="NSchoicebox4" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="NStotal4" layoutX="660.0" layoutY="60.0" text="2495.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="PSpane1" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="PSimg1" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/FF7R.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="PSname1" layoutX="130.0" layoutY="30.0" text="Final Fantasy VII Remake" textFill="WHITE" />
+                        <Label fx:id="PSprice1" layoutX="130.0" layoutY="60.0" text="1690.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="PSchoicebox1" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="PStotal1" layoutX="660.0" layoutY="60.0" text="1690.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="PSpane2" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="PSimg2" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/RE4R.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="PSname2" layoutX="130.0" layoutY="30.0" text="Resident Evil 4 Remake" textFill="WHITE" />
+                        <Label fx:id="PSprice2" layoutX="130.0" layoutY="60.0" text="2990.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="PSchoicebox2" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="PStotal2" layoutX="660.0" layoutY="60.0" text="2990.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="PSpane3" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="PSimg3" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/GoW.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="PSname3" layoutX="130.0" layoutY="30.0" text="God Of War Ragnarok" textFill="WHITE" />
+                        <Label fx:id="PSprice3" layoutX="130.0" layoutY="60.0" text="2990.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="PSchoicebox3" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="PStotal3" layoutX="660.0" layoutY="60.0" text="2990.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="PSpane4" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="PSimg4" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Spiderman.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="PSname4" layoutX="130.0" layoutY="30.0" text="Marvel's Spider-Man" textFill="WHITE" />
+                        <Label fx:id="PSprice4" layoutX="130.0" layoutY="60.0" text="1590.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="PSchoicebox4" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="PStotal4" layoutX="660.0" layoutY="60.0" text="1590.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="XBpane1" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="XBimg1" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ACMirage.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="XBname1" layoutX="130.0" layoutY="30.0" text="Assassin's Creed Mirage" textFill="WHITE" />
+                        <Label fx:id="XBprice1" layoutX="130.0" layoutY="60.0" text="2990.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="XBchoicebox1" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="XBtotal1" layoutX="660.0" layoutY="60.0" text="2990.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="XBpane2" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="XBimg2" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/CYBER2077.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="XBname2" layoutX="130.0" layoutY="30.0" text="Cyberpunk 2077" textFill="WHITE" />
+                        <Label fx:id="XBprice2" layoutX="130.0" layoutY="60.0" text="1050.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="XBchoicebox2" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="XBtotal2" layoutX="660.0" layoutY="60.0" text="1050.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="XBpane3" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="XBimg3" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/HaloInf.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="XBname3" layoutX="130.0" layoutY="30.0" text="Halo Infinite" textFill="WHITE" />
+                        <Label fx:id="XBprice3" layoutX="130.0" layoutY="60.0" text="2895.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="XBchoicebox3" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="XBtotal3" layoutX="660.0" layoutY="60.0" text="2895.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="XBpane4" prefHeight="200.0" prefWidth="775.0" style="-fx-background-color: #6c5daf;">
+                     <children>
+                        <ImageView fx:id="XBimg4" fitHeight="140.0" fitWidth="120.0" layoutX="15.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/RDR2.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="XBname4" layoutX="130.0" layoutY="30.0" text="Red Dead Redemption 2" textFill="WHITE" />
+                        <Label fx:id="XBprice4" layoutX="130.0" layoutY="60.0" text="1250.00" textFill="#39d1fc" />
+                        <ChoiceBox fx:id="XBchoicebox4" layoutX="450.0" layoutY="60.0" prefWidth="150.0" />
+                        <Label fx:id="XBtotal4" layoutX="660.0" layoutY="60.0" text="1250.00" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

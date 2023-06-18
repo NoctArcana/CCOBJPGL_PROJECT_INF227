@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="767.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceiptController">
+   <children>
+      <ImageView fitHeight="95.0" fitWidth="94.0" layoutX="151.0" layoutY="11.0">
+         <image>
+            <Image url="@../images/logoReceipt.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="156.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Galaxy">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="147.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234 Bayola St.">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manila, PH 6942 ">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="145.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1-888-888-1234">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------------------">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="236.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="319.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY / Item Name">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="NSqty1" layoutX="32.0" layoutY="207.0" text="NSqty1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSgame1" layoutX="80.0" layoutY="207.0" text="NSgame1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSprice1" layoutX="235.0" layoutY="207.0" prefHeight="15.0" prefWidth="72.0" text="NSprice1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSamount1" layoutX="320.0" layoutY="207.0" text="NSamount1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSqty2" layoutX="32.0" layoutY="235.0" text="NSqty2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSgame2" layoutX="80.0" layoutY="235.0" text="NSgame2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSprice2" layoutX="235.0" layoutY="235.0" prefHeight="15.0" prefWidth="72.0" text="NSprice2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSamount2" layoutX="320.0" layoutY="235.0" text="NSamount2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSqty3" layoutX="32.0" layoutY="263.0" text="NSqty3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSgame3" layoutX="80.0" layoutY="263.0" text="NSgame3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSprice3" layoutX="235.0" layoutY="263.0" prefHeight="15.0" prefWidth="72.0" text="NSprice3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSamount3" layoutX="320.0" layoutY="263.0" text="NSamount3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSqty4" layoutX="32.0" layoutY="289.0" text="NSqty4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSgame4" layoutX="80.0" layoutY="289.0" text="NSgame4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSprice4" layoutX="235.0" layoutY="289.0" prefHeight="15.0" prefWidth="72.0" text="NSprice4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="NSamount4" layoutX="320.0" layoutY="289.0" text="NSamount4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSqty1" layoutX="32.0" layoutY="317.0" prefHeight="15.0" prefWidth="37.0" text="PSqty1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSgame1" layoutX="80.0" layoutY="317.0" text="PSgame1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSprice1" layoutX="235.0" layoutY="317.0" prefHeight="15.0" prefWidth="72.0" text="PSprice1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSamount1" layoutX="320.0" layoutY="317.0" text="PSamount1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSqty2" layoutX="32.0" layoutY="345.0" prefHeight="15.0" prefWidth="37.0" text="PSqty2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSgame2" layoutX="80.0" layoutY="345.0" text="PSgame2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSprice2" layoutX="235.0" layoutY="345.0" prefHeight="15.0" prefWidth="72.0" text="PSprice2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSamount2" layoutX="320.0" layoutY="345.0" text="PSamount2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSqty3" layoutX="32.0" layoutY="373.0" prefHeight="15.0" prefWidth="37.0" text="PSqty3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSgame3" layoutX="80.0" layoutY="373.0" text="PSgame3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSprice3" layoutX="235.0" layoutY="373.0" prefHeight="15.0" prefWidth="72.0" text="PSprice3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSamount3" layoutX="320.0" layoutY="373.0" text="PSamount3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSqty4" layoutX="32.0" layoutY="401.0" prefHeight="15.0" prefWidth="37.0" text="PSqty4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSgame4" layoutX="80.0" layoutY="401.0" text="PSgame4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSprice4" layoutX="235.0" layoutY="401.0" prefHeight="15.0" prefWidth="72.0" text="PSprice4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PSamount4" layoutX="320.0" layoutY="401.0" text="PSamount4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBqty1" layoutX="32.0" layoutY="429.0" prefHeight="15.0" prefWidth="37.0" text="XBqty1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBgame1" layoutX="80.0" layoutY="429.0" text="XBgame1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBprice1" layoutX="235.0" layoutY="429.0" prefHeight="15.0" prefWidth="72.0" text="XBprice1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBamount1" layoutX="320.0" layoutY="429.0" text="XBamount1" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBqty2" layoutX="32.0" layoutY="457.0" prefHeight="15.0" prefWidth="37.0" text="XBqty2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBgame2" layoutX="80.0" layoutY="457.0" text="XBgame2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBprice2" layoutX="235.0" layoutY="457.0" prefHeight="15.0" prefWidth="72.0" text="XBprice2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBamount2" layoutX="320.0" layoutY="457.0" text="XBamount2" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBqty3" layoutX="32.0" layoutY="485.0" prefHeight="15.0" prefWidth="37.0" text="XBqty3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBgame3" layoutX="80.0" layoutY="485.0" text="XBgame3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBprice3" layoutX="235.0" layoutY="485.0" prefHeight="15.0" prefWidth="72.0" text="XBprice3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBamount3" layoutX="320.0" layoutY="485.0" text="XBamount3" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBqty4" layoutX="32.0" layoutY="513.0" prefHeight="15.0" prefWidth="37.0" text="XBqty4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBgame4" layoutX="80.0" layoutY="513.0" text="XBgame4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBprice4" layoutX="235.0" layoutY="513.0" prefHeight="15.0" prefWidth="72.0" text="XBprice4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBamount4" layoutX="320.0" layoutY="513.0" text="XBamount4" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="30.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------------------">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total to pay:">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="total" layoutX="285.0" layoutY="551.0" prefHeight="15.0" prefWidth="72.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="30.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------------------">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="117.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store closes at 11 pm ">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for shopping. Please come again.">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="31.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="==============================================">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: 20/06/23   9:00">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff: Miles Morales">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="263.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slip: 69420123">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="267.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trans: 123420">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

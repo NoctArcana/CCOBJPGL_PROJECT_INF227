@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FeedbackController">
+   <children>
+      <ImageView fx:id="feedbackBg" fitHeight="499.0" fitWidth="745.0" layoutX="-6.0" layoutY="-8.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/GGbg2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="295.0" layoutY="24.0" text="FEEDBACK" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="96.0" text="Name:" textFill="WHITE" />
+      <TextField layoutX="97.0" layoutY="92.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="53.0" layoutY="127.0" text="Email:" textFill="WHITE" />
+      <TextField layoutX="97.0" layoutY="123.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="53.0" layoutY="163.0" text="Leave your feedback below (i.e How did you enjoy our services,  How can we further improve the service)" textFill="WHITE" />
+      <TextArea layoutX="53.0" layoutY="191.0" prefHeight="200.0" prefWidth="584.0" />
+      <Button fx:id="submitbtn" layoutX="576.0" layoutY="399.0" mnemonicParsing="false" onAction="#submit" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #6a1b9a; -fx-background-radius: 90; -fx-text-fill: white;" text="SUBMIT" />
+   </children>
+</AnchorPane>
